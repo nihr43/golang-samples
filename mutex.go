@@ -21,7 +21,7 @@ func main() {
 	var wg sync.WaitGroup
 	var mu sync.Mutex
 
-	things := map[string]string{
+	things := [string]string{
 		"A": "green",
 		"B": "pink",
 	}
