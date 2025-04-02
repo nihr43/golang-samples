@@ -6,7 +6,8 @@ import (
 	"time"
 )
 
-func runClock(clock chan int) {
+// chan passed as send target only
+func runClock(clock chan<- int) {
 	for i := 0; ; i++ {
 		clock <- i
 		time.Sleep(1 * time.Second)
